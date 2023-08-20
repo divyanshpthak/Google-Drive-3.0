@@ -13,10 +13,11 @@ function App() {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    // const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const provider = ((window.ethereum != null) ? new ethers.providers.Web3Provider(window.ethereum) : ethers.providers.getDefaultProvider());
 
     const loadProvider = async () => {
-      if (provider) {
+      if (provider && typeof window.ethereum !== 'undefined') {
         window.ethereum.on("chainChanged", () => {
           window.location.reload();
         });
@@ -38,7 +39,7 @@ function App() {
         setContract(contract);
         setProvider(provider);
       } else {
-        console.error("Metamask is not installed");
+         alert("Metamask is not Installed");
       }
     };
     provider && loadProvider();
