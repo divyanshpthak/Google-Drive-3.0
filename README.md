@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Google Drive 3.0 - Basic Blockchain-Powered File Storage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Google Drive 3.0 is a simple implementation of a file storage system that utilizes blockchain technology as its underlying framework. This project demonstrates a basic version of Google Drive, focusing on image storage and retrieval. The smart contract powering this project has been deployed to the Goerli Test Network, making it a Georli blockchain-based application.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Blockchain-Powered Storage:** Google Drive 3.0 leverages blockchain technology to provide secure and immutable storage for image files.
 
-### `npm start`
+- **Goerli Test Network:** The smart contract for this project has been deployed to the Goerli Test Network, allowing for testing and development without using real Ether.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Image Support:** This version of Google Drive supports the storage and retrieval of image files.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Share Access:** Share access to your images with others by setting permissions through the smart contract, enabling collaborative viewing of stored images.
 
-### `npm test`
+- **Access Shared Images:** If granted access, users can view images uploaded by others, fostering seamless collaboration.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **IPFS Integration:** Images are stored using IPFS (InterPlanetary File System) through Pinata, ensuring decentralized and efficient image storage.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To interact with Google Drive 3.0, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Connect to the Goerli Test Network:** Ensure that you are connected to the Goerli Test Network using an Ethereum wallet like MetaMask.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Access the Interface:** Open the Google Drive 3.0 interface by navigating to [https://googledriveweb3.netlify.app](https://googledriveweb3.netlify.app).
 
-### `npm run eject`
+3. **Upload Images:** Use the interface to upload image files to the blockchain-based storage system.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Share Access:** Share access to specific images by assigning permissions to Ethereum addresses through the smart contract.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **View Uploaded Images:** Uploaded images can be viewed and accessed using the interface.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. **Access Shared Images:** If given access, users can also view images uploaded by others.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+- **Blockchain:** Ethereum (Goerli Test Network)
+- **Smart Contract Language:** Solidity
+- **Frontend:** React, HTML, CSS, JavaScript
+- **Image Storage:** IPFS (InterPlanetary File System) via Pinata
+- **Smart Contract Development:** Hardhat
+- **Ethereum Interaction:** ethers.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment
 
-### Code Splitting
+The smart contract has been deployed to the Goerli Test Network. You can find the contract address and transaction details [here](https://goerli.etherscan.io/address/0xD7a70Ed82EfEAbb99774A25f2Bffac230a89fd2D).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributions
 
-### Analyzing the Bundle Size
+Contributions to enhance the functionality, security, and user experience of Google Drive 3.0 are welcome. Feel free to submit issues and pull requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
